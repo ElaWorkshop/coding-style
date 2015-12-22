@@ -1,23 +1,29 @@
-# TeaWhen Coding Style
+# Ela Coding Style
 
-## Commit Log
+## Commit Messages
 
 ### Complete
 
-Use sentence case. If the commit is issue related, add a prefix “[Verb #ID] ” (don’t forget the trailing space). Available verbs are **Fix**, **Close**, and **On** (**Fix** and **Close** will close the issue).
+Use sentence case. Use simple present tense. If the commit is issue related, add a prefix “[Verb #ID] ” (don’t forget the trailing space). Available verbs are **Fix**, **Close**, and **On** (**Fix** and **Close** will close the issue).
 
 **For example:**
 ```
-[Fix #3] Migrated to AFNetworking 2.0
+[Fix #3] Migrate to AFNetworking 2.0
 ```
+
 ```
-[On #2] Trying TEAChart
+[On #2] Try TEAChart
 ```
 
 **But not:**
 ```
+[Fix #3] Migrated to AFNetworking 2.0
+```
+
+```
 migrated to afn 2.0
 ```
+
 ```
 trying TEAChart
 ```
@@ -28,12 +34,38 @@ Use explicit description.
 
 **For example:**
 ```
-Fixed table view cell text overflow
+Fix table view cell text overflow
 ```
 
 **But not:**
 ```
 bug fix
+```
+
+### Write a Body If It’s Too Long
+
+**For example:**
+```
+Fix a bug where 3D Touch shortcuts could generate invalid taiyakies
+
+If Expense was launched by 3D Touch shortcut, `viewDidLoad` would be called after `prepareForSegue:sender:`. Some of the properties would not be initialized.
+```
+
+**But not:**
+```
+Fix a bug where 3D Touch shortcuts could generate invalid taiyakies because some of the properties would not be initialized
+```
+
+### Use Emoji
+
+**For example:**
+```
+Release 1.0 🍻
+```
+
+**But not:**
+```
+Release 1.0
 ```
 
 ## Objective-C Style
